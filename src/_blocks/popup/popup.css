@@ -1,0 +1,56 @@
+@import './blocks/get-order/get-order.css';
+
+#popup {
+  position: relative;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 10;
+  padding: 20px;
+
+  &.active {
+    display: flex;
+  }
+}
+
+[name="closePopup"] {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  aspect-ratio: 1;
+  background: var(--c-white);
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background: var(--c-black);
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover {
+    &::before,
+    &::after {
+      background: var(--c-red);
+    }
+  }
+}

@@ -1,0 +1,33 @@
+---
+import Popup from '../_blocks/popup/popup.astro';
+import '../index.css';
+import Footer from './blocks/footer/footer.astro';
+import Header from './blocks/header/header.astro';
+---
+
+<!doctype html>
+<html dir="auto" lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
+    />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content="Discover top talent for your team with our developer matchmaking services. We identify the perfect fit to take the stress out of hiring. Build a winning team today" />
+    <meta name="keywords" content="talent team find talent" />
+    <meta name="author" content="Shartzzz" />
+    <meta name="theme-color" content="#00010D" />
+  </head>
+  <body>
+    <Header />
+    <slot />
+    <Footer />
+
+    <Popup />
+
+    <script src="../index.js"></script>
+  </body>
+</html>

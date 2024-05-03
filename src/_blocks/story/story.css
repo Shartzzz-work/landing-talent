@@ -1,0 +1,37 @@
+#story {
+  /* padding: 150px; */
+  width: var(--w-wrapper-s);
+  margin: 100px auto;
+
+  & h2 {
+    font-size: 3rem;
+  }
+}
+
+.story-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.story-item {
+  max-width: 400px;
+
+  & p {
+    opacity: 60%;
+  }
+}
+
+.story-article {
+  flex: 1 1 700px;
+  display: grid;
+  gap:20px;
+  max-width: 700px;
+  margin-left: auto;
+
+  & > p {
+    font-size: clamp(1em, 4vw, 1.2em);
+  }
+}

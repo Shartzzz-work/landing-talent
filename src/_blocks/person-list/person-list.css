@@ -1,0 +1,44 @@
+#personList {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.person-item {
+  --c-bg: var(--c-accent);
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px 0 20px;
+  background: var(--c-bg);
+  border-radius: 500px 500px 0 0;
+  color: var(--c-text-dark);
+  /* width: 100%; */
+
+  &:nth-child(1) {
+    --c-bg: var(--c-person-1);
+  }
+  &:nth-child(2) {
+    --c-bg: var(--c-person-2);
+  }
+  &:nth-child(3) {
+    --c-bg: var(--c-person-3);
+  }
+  &:nth-child(4) {
+    --c-bg: var(--c-person-4);
+  }
+
+  @media screen and (width <= 850px) {
+    flex: 1 1 50%;
+  }
+  @media screen and (width <= 600px) {
+    flex: 1 1 260px;
+  }
+}
+
+.person-img {
+  margin-top: auto;
+  width: 100%;
+  height: auto;
+}

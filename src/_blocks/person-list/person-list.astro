@@ -1,0 +1,51 @@
+---
+import { Image } from 'astro:assets';
+
+import img1 from '../../_img/person1.png';
+import img2 from '../../_img/person2.png';
+import img3 from '../../_img/person3.png';
+import img4 from '../../_img/person4.png';
+---
+
+<section id="personList">
+  <div class="person-item">
+    <h2>Janifer</h2>
+    <span>QA Engineer</span>
+    <Image
+      src={img2}
+      densities={[1.5, 2]}
+      alt="person image"
+      class="person-img"
+    />
+  </div>
+  <div class="person-item">
+    <h2>John Doe</h2>
+    <span>Full Stack Developer</span>
+    <Image
+      src={img4}
+      densities={[1.5, 2]}
+      alt="person image"
+      class="person-img"
+    />
+  </div>
+  <div class="person-item">
+    <h2>Michael</h2>
+    <span>Front-end Engineer</span>
+    <Image
+      src={img1}
+      densities={[1.5, 2]}
+      alt="person image"
+      class="person-img"
+    />
+  </div>
+  <div class="person-item">
+    <h2>John Doe</h2>
+    <span>UX Designer</span>
+    <Image
+      src={img3}
+      densities={[1.5, 2]}
+      alt="person image"
+      class="person-img"
+    />
+  </div>
+</section>

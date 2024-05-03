@@ -1,0 +1,22 @@
+{
+  "name": "talent",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev \"astro telemetry disable\"",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^4.7.0",
+    "@astrojs/check": "^0.5.10",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@astrojs/sitemap": "^3.1.4",
+    "astro-compress": "^2.2.22",
+    "vite-plugin-pwa": "^0.20.0"
+  }
+}

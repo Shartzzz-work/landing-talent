@@ -1,0 +1,31 @@
+---
+import { Image } from 'astro:assets';
+
+import img1 from '../../_img/person1.png';
+---
+
+<section id="testimonials">
+  <h2>Testimonials</h2>
+  <div class="testimonials-container">
+    <div class="person-item">
+      <h3>Michael</h3>
+      <b>Front-end Engineer</b>
+      <Image
+        src={img1}
+        densities={[1.5, 2]}
+        alt="person image"
+        class="person-img"
+      />
+    </div>
+    <blockquote>
+      <svg class="quote">
+        <use xlink:href="./sprites/sprite-main.svg#iconQuote"></use>
+      </svg>
+      <p class="testimonials-text">
+        We were able to build a strong team of professionals that has helped our
+        business grow and succeed. I highly recommend their services to anyone
+        in need of quality talent recruitment.
+      </p>
+    </blockquote>
+  </div>
+</section>

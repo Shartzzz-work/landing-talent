@@ -1,0 +1,21 @@
+#hero {
+  width: var(--w-wrapper-s);
+  margin: 60px auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+
+  & h1 {
+    font-size: 3rem;
+    flex: 1 1 380px;
+    line-height: 1;
+  }
+
+  & > div {
+    flex: 1 1 380px;
+    font-size: 1.2em;
+    display: grid;
+    gap: 20px;
+  }
+}

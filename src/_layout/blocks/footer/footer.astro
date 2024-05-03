@@ -1,0 +1,52 @@
+---
+import Logo from '../../../_elements/logo/logo.astro';
+---
+
+<footer id="footer">
+  <a href="/" class="footer-logo" title="home link">
+    <Logo />
+  </a>
+  <ul class="footer-social">
+    <li>
+      <a href="https://facebook.com/" class="footer-social__item" title="facebook">
+        <svg>
+          <use xlink:href="./sprites/sprite-main.svg#iconFb"></use>
+        </svg>
+      </a>
+    </li>
+    <li>
+      <a href="https://twitter.com/" class="footer-social__item" title="twitter">
+        <svg>
+          <use xlink:href="./sprites/sprite-main.svg#iconTw"></use>
+        </svg>
+      </a>
+    </li>
+    <li>
+      <a href="https://instagram.com/" class="footer-social__item" title="instagram">
+        <svg>
+        <use xlink:href='./sprites/sprite-main.svg#iconIg'></use>
+        </svg>
+      </a>
+    </li>
+  </ul>
+  <div class="footer-container">
+    <span>© Copyleft</span>
+
+    <nav class="footer-nav__container">
+      <ul class="footer-nav">
+        <li>
+          <a href="#story" class="link">Our Story</a>
+        </li>
+        <li>
+          <a href="#services" class="link">Services</a>
+        </li>
+        <li>
+          <a href="#testimonials" class="link">Testimonials</a>
+        </li>
+        <li>
+          <a href="#cta" class="link">Find talent</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>

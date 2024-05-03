@@ -1,0 +1,54 @@
+:root {
+  --c-yellow: #FFCA31;
+  --c-white: #ffff;
+  --c-black: #00010D;
+  --c-dark-grey: #15161C;
+  --c-grey: #D9D9D9;
+  --c-grey-light: #2e3035;
+  --c-pink: #FFB9CE;
+  --c-blue: #CAD5D4;
+  --c-beige: #E4DCD3;
+  --c-red: #b33e66;
+
+  --c-dark: var(--c-black);
+  --c-main-bg: var(--c-dark-grey);
+  --c-accent: var(--c-yellow);
+  --c-text: var(--c-white);
+  --c-text-dark: var(--c-black);
+
+  --c-person-1: var(--c-pink);
+  --c-person-2: var(--c-blue);
+  --c-person-3: var(--c-beige);
+  --c-person-4: var(--c-yellow);
+
+  --edges: 20px;
+  --edges-middle: 10vw;
+
+  --w-container: 1728px;
+  --w-container-s: 1428px;
+  --w-wrapper: min(var(--w-container), 100vw - max(calc(var(--edges) * 2), var(--edges-middle)));
+  --w-wrapper-s: min(var(--w-container-s), 100vw - max(calc(var(--edges) * 2), var(--edges-middle)));
+
+  color: var(--c-text);
+  font-weight: 400;
+  font-size: 16px;
+  font-variant-ligatures: common-ligatures;
+  font-family: Manrope, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--c-black);
+  font-synthesis: none;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}

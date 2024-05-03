@@ -1,0 +1,10 @@
+@import './_css/general.css';
+@import './_blocks/hero/hero.css';
+@import './_blocks/person-list/person-list.css';
+@import './_blocks/story/story.css';
+@import './_blocks/talent/talent.css';
+@import './_blocks/partners/partners.css';
+@import './_blocks/services/services.css';
+@import './_blocks/testimonials/testimonials.css';
+@import './_blocks/cta/cta.css';
+@import './_blocks/popup/popup.css';

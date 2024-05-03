@@ -1,0 +1,31 @@
+---
+import { Image } from 'astro:assets';
+
+import img1 from '../../_img/partner-logo1.png';
+import img2 from '../../_img/partner-logo2.png';
+import img3 from '../../_img/partner-logo3.png';
+import img4 from '../../_img/partner-logo4.png';
+import img5 from '../../_img/partner-logo5.png';
+import img6 from '../../_img/partner-logo6.png';
+---
+
+<div id="partners">
+  <a href="#" title="partner link">
+    <Image src={img1} densities={[1.5, 2]} alt="partner image" loading={"eager"} />
+  </a>
+  <a href="#" title="partner link">
+    <Image src={img2} densities={[1.5, 2]} alt="partner image" loading={"eager"} />
+  </a>
+  <a href="#" title="partner link">
+    <Image src={img3} densities={[1.5, 2]} alt="partner image" loading={"eager"} />
+  </a>
+  <a href="#" title="partner link">
+    <Image src={img4} densities={[1.5, 2]} alt="partner image" loading={"eager"} />
+  </a>
+  <a href="#" title="partner link">
+    <Image src={img5} densities={[1.5, 2]} alt="partner image" loading={"eager"} />
+  </a>
+  <a href="#" title="partner link">
+    <Image src={img6} densities={[1.5, 2]} alt="partner image" loading={"eager"} />
+  </a>
+</div>

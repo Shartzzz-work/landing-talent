@@ -1,0 +1,22 @@
+#getOrder {
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: var(--c-white);
+  padding: 30px;
+  border-radius: 20px;
+  width: clamp(300px, 40vw, 400px);
+
+  [name="closePopup"] {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+  }
+
+  & .button {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+}
